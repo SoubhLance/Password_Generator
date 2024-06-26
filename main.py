@@ -39,7 +39,7 @@ def generate_password():
     password_text.delete(1.0, tk.END)  # Clear previous content
     password_text.insert(tk.END, password)  # Insert generated password
 
-# GUI setup
+# GUI 
 root = tk.Tk()
 root.title("Random Password Generator")
 
@@ -50,7 +50,7 @@ main_frame.grid()
 ttk.Label(main_frame, text="Password Length:").grid(row=0, column=0, sticky="w")
 length_entry = ttk.Entry(main_frame, width=5)
 length_entry.grid(row=0, column=1, sticky="w")
-length_entry.insert(0, "12")  # Default length
+length_entry.insert(0, "12")  
 
 # Character type checkboxes
 uppercase_var = tk.BooleanVar()
